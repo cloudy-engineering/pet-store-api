@@ -1,5 +1,7 @@
 # pet-store-api project
 
+![CI](https://github.com/cloudy-engineering/pet-store-api/workflows/CI/badge.svg)
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
