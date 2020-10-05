@@ -2,6 +2,7 @@ package com.cloudyengineering.pets;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Transaction {
@@ -13,9 +14,9 @@ public class Transaction {
     private Double transactionAmount;
 
     @JsonProperty("txn_date")
-    private Date transactionDate;
-
-    @JsonProperty("txn_amount")
+    @JsonFormat
+            (shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")    private Date transactionDate;
+    @JsonProperty("txn_method")
     private String transactionMethod;
 
     public String getTransactionId() {
