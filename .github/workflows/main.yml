@@ -30,4 +30,3 @@ jobs:
       - name: Run a multi-line script
         run: |
           ./mvnw clean install
-          
