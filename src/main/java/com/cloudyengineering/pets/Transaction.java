@@ -14,8 +14,9 @@ public class Transaction {
     private Double transactionAmount;
 
     @JsonProperty("txn_date")
-    @JsonFormat
-            (shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")    private Date transactionDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
+    private Date transactionDate;
+
     @JsonProperty("txn_method")
     private String transactionMethod;
 

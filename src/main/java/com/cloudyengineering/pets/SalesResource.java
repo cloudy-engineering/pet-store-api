@@ -20,7 +20,7 @@ import javax.ws.rs.core.Response;
 public class SalesResource {
     
     @GET
-    @RolesAllowed({"api-employees"})
+    @RolesAllowed({"api-employee"})
     public Response getSales() {
         List<Transaction> transactions;
 
