@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -16,6 +17,7 @@ import javax.ws.rs.core.Response;
 public class PetResource {
 
     @GET
+    @RolesAllowed({"api-customer"})
     public Response getPets() {
         List<Pet> pets;
         Pet pet1 = new Pet();
