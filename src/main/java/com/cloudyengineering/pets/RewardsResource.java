@@ -16,8 +16,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-//import org.eclipse.microprofile.jwt.JsonWebToken;
-
 @Path("/v1/rewards")
 @Produces("application/json")
 public class RewardsResource {
